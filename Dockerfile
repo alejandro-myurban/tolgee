@@ -1,8 +1,0 @@
-FROM tolgee/tolgee:latest
-
-ENV TOLGEE_AUTHENTICATION_ENABLED=true
-ENV TOLGEE_POSTGRES_AUTOSTART_ENABLED=false
-
-EXPOSE 8080
-
-CMD java -jar /app.jar --server.port=$PORT
